@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionnaire de données</title>
+</head>
+<body>
+    <div>
+        <h1>Dictionnaire de données</h1>
+        <div>
+        <h2>customers</h2>
+        
+        <table class="print">
+          <tr>
+            <th>Colonne</th>
+            <th>Type</th>
+            <th>Null</th>
+            <th>Valeur par défaut</th>
+                      <th>Commentaires</th>
+                    </tr>
+                    <tr>
+              <td class="nowrap">
+                customerNumber
+                                <em>(Primaire)</em>
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                decimal(11,0)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                customerName
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                contactLastName
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                contactFirstName
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                phone
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                addressLine1
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                addressLine2
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Oui</td>
+              <td class="nowrap">
+                                <em>NULL</em>
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                city
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                state
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Oui</td>
+              <td class="nowrap">
+                                <em>NULL</em>
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                postalCode
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(15)
+              </td>
+              <td>Oui</td>
+              <td class="nowrap">
+                                <em>NULL</em>
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                country
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                salesRepEmployeeNumber
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                decimal(11,0)
+              </td>
+              <td>Oui</td>
+              <td class="nowrap">
+                                <em>NULL</em>
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                creditLimit
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                decimal(10,2)
+              </td>
+              <td>Oui</td>
+              <td class="nowrap">
+                                <em>NULL</em>
+                            </td>
+                          <td></td>
+                        </tr>
+                </table>
+  
+        <h3>Index</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"></div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Nom de l'index</th><th>Type</th><th>Unique</th><th>Compressé</th><th>Colonne</th><th>Cardinalité</th><th>Interclassement</th><th>Null</th><th>Commentaire</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Oui</td><td  rowspan="1" >Non</td><td>customerNumber</td><td>122</td><td>A</td><td>Non</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >salesRepEmployeeNumber</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Non</td><td  rowspan="1" >Non</td><td>salesRepEmployeeNumber</td><td></td><td>A</td><td>Oui</td><td  rowspan="1" ></td></tr></tbody></table></div>
+      </div>
+       
+        <div>
+        <h2>offices</h2>
+        
+        <table class="print">
+          <tr>
+            <th>Colonne</th>
+            <th>Type</th>
+            <th>Null</th>
+            <th>Valeur par défaut</th>
+                      <th>Commentaires</th>
+                    </tr>
+                    <tr>
+              <td class="nowrap">
+                officeCode
+                                <em>(Primaire)</em>
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(10)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                city
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                phone
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                addressLine1
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                addressLine2
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Oui</td>
+              <td class="nowrap">
+                                <em>NULL</em>
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                state
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Oui</td>
+              <td class="nowrap">
+                                <em>NULL</em>
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                country
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(50)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                postalCode
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(15)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                    <tr>
+              <td class="nowrap">
+                territory
+                            </td>
+              <td lang="en" dir="ltr" class="nowrap">
+                varchar(10)
+              </td>
+              <td>Non</td>
+              <td class="nowrap">
+                                
+                            </td>
+                          <td></td>
+                        </tr>
+                </table>
+  
+        <h3>Index</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"></div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Nom de l'index</th><th>Type</th><th>Unique</th><th>Compressé</th><th>Colonne</th><th>Cardinalité</th><th>Interclassement</th><th>Null</th><th>Commentaire</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Oui</td><td  rowspan="1" >Non</td><td>officeCode</td><td>7</td><td>A</td><td>Non</td><td  rowspan="1" ></td></tr></tbody></table></div>
+      </div>
+        
+    </div>
+</body>
+</html>
